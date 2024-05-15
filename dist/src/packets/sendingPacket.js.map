@@ -1,0 +1,1 @@
+{"version":3,"file":"sendingPacket.js","sourceRoot":"","sources":["../../../src/packets/sendingPacket.ts"],"names":[],"mappings":";;;AAIA,MAAsB,aAAa;IAC/B,UAAU,GAAG,CAAC,CAAC;IACf,OAAO,CAAU;IAEjB,CAAC,CAAU;IAEX,YAAsB,CAAU;QAC5B,IAAI,CAAC,CAAC,GAAG,CAAC,CAAC;IACf,CAAC;IAED,SAAS,CAAC,MAAuB;QAC7B,MAAM,CAAC,UAAU,CAAC,IAAI,CAAC,OAAO,CAAC,CAAC;IACpC,CAAC;CACJ;AAbD,sCAaC"}

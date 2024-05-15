@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="144"
+   height="144"
+   viewBox="0 0 38.099999 38.100001"
+   version="1.1"
+   id="svg3718"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="loot-ammo-box.svg">
+  <defs
+     id="defs3712" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="4.1402298"
+     inkscape:cx="76.249268"
+     inkscape:cy="61.23384"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1018"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3733" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata3715">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-258.89998)">
+    <rect
+       style="fill:#333333;fill-opacity:1;stroke-width:0.48148298"
+       id="rect3720"
+       width="38.364582"
+       height="38.364605"
+       x="0"
+       y="258.63541"
+       rx="0.90923572" />
+    <rect
+       style="fill:#b3b3b3;fill-opacity:1;stroke-width:0.22224979"
+       id="rect3735"
+       width="27.781248"
+       height="27.781239"
+       x="5.2916665"
+       y="263.92706"
+       rx="0.76375759" />
+    <rect
+       style="fill:#f2f2f2;fill-opacity:1;stroke-width:0.26458332"
+       id="rect3737"
+       width="14.552083"
+       height="13.229177"
+       x="13.229167"
+       y="267.89581"
+       rx="0.90923536" />
+  </g>
+</svg>

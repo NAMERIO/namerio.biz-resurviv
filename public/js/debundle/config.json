@@ -1,0 +1,6 @@
+{
+  "type": "webpack",
+  "entryPoint": 1,
+  "knownPaths": {},
+  "moduleAst": ["webpackJsonp"]
+}

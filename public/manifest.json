@@ -1,0 +1,17 @@
+{
+    "name": "Surviv 1v1",
+    "short_name": "Surviv_1v1",
+    "icons": [
+        {
+            "src": "img/icon_app.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "density": 3.0
+        }
+    ],
+    "start_url": "index.html",
+    "theme_color": "#80af49",
+    "background_color": "#80af49",
+    "display": "fullscreen",
+    "orientation": "landscape"
+}
