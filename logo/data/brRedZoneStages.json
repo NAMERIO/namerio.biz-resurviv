@@ -1,0 +1,58 @@
+[
+    {
+      "mode": 0,
+      "duration": 0,
+      "radOld": 300,
+      "radNew": 300,
+      "damage": 0
+    },
+    {
+      "mode": 1,
+      "duration": 90,
+      "radOld": 300,
+      "radNew": 100,
+      "damage": 5
+    },
+    {
+      "mode": 2,
+      "duration": 10,
+      "radOld": 300,
+      "radNew": 100,
+      "damage": 5
+    },
+    {
+      "mode": 1,
+      "duration": 30,
+      "radOld": 100,
+      "radNew": 50,
+      "damage": 10
+    },
+    {
+      "mode": 2,
+      "duration": 10,
+      "radOld": 100,
+      "radNew": 50,
+      "damage": 10
+    },
+    {
+      "mode": 1,
+      "duration": 30,
+      "radOld": 50,
+      "radNew": 25,
+      "damage": 20
+    },
+    {
+      "mode": 2,
+      "duration": 10,
+      "radOld": 50,
+      "radNew": 25,
+      "damage": 20
+    },
+    {
+      "mode": 1,
+      "duration": 30,
+      "radOld": 50,
+      "radNew": 25,
+      "damage": 20
+    }
+  ]

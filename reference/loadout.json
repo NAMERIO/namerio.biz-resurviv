@@ -1,0 +1,490 @@
+[
+  {
+    "type": "outfitTurkey",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitDev",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitMod",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitWheat",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitNoir",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitRedLeaderAged",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitBlueLeaderAged",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitSpetsnaz",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitWoodsCloak",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitElf",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitImperial",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitLumber",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitVerde",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitPineapple",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitTarkhany",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitWaterElem",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitHeaven",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitMeteor",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitIslander",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitAqua",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitCoral",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitKhaki",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitParma",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitParmaPrestige",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitCasanova",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitPrisoner",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitJester",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitWoodland",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitRoyalFortune",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitKeyLime",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitCobaltShell",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitCarbonFiber",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitDarkGloves",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitDarkShirt",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitDesertCamo",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitCamo",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitRed",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "outfitWhite",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "knuckles_rusted",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "knuckles_heroic",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "karambit_rugged",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "karambit_prismatic",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "karambit_drowned",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "bayonet_rugged",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "bayonet_woodland",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "huntsman_rugged",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "huntsman_burnished",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "bowie_vintage",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "bowie_frontier",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "heal_heart",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "heal_moon",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "heal_tomoe",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "boost_star",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "boost_naturalize",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "boost_shuriken",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "emote_ghost_base",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "emote_bandagedface",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "emote_picassoface",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "emote_pooface",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "emote_ok",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  },
+  {
+    "type": "emote_rainbow",
+    "source": "standard-issue",
+    "timeAcquired": 0,
+    "status": 2,
+    "id": "0",
+    "sourceRef": "0"
+  }
+]
