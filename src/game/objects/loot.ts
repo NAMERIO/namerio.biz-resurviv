@@ -13,7 +13,7 @@ export class Loot extends GameObject {
     isPlayer = false;
     isObstacle = false;
     isBullet = false;
-    isLoot = true;
+    isLoot = true; 
     collidesWith = {
         player: false,
         obstacle: true,

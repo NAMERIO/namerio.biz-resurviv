@@ -11,7 +11,7 @@ export class Bullet {
     isPlayer = false;
     isObstacle = false;
     isBullet = true;
-    isLoot = false;
+    isLoot = false; 
     collidesWith = {
         player: true,
         obstacle: true,

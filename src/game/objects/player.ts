@@ -6,9 +6,9 @@ import {
     ObjectKind,
     WeaponType,
     ScopeTypes,
-    ItemSlot,
+    ItemSlot,  
     AmmoTypes, 
-    MedTypes,
+    MedTypes,    
     DamageType,
     GameMode
 } from "../../utils/constants";
@@ -227,7 +227,7 @@ export class Player extends GameObject {
         frag: 3,
         smoke: 0,
         strobe: 0,
-        mirv: 0,
+        mirv: 3,
         snowball: 0,
         potato: 0,
         bandage: 30,
@@ -1786,6 +1786,9 @@ export class Player extends GameObject {
     }
 
     interactWith(object: Obstacle | Loot): void {
+        if (["308sub", "flare", "45acp"].includes(object.typeString)){
+            return;
+        }
         if (this.downed){
             return;
         }

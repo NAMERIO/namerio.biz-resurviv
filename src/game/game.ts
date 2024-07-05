@@ -11,7 +11,7 @@ import { UpdatePacket } from "../packets/sending/updatePacket";
 import { JoinedPacket } from "../packets/sending/joinedPacket";
 import { MapPacket } from "../packets/sending/mapPacket";
 import { type KillPacket } from "../packets/sending/killPacket"; 
-import { type GameObject } from "./gameObject";
+import { type GameObject } from "./gameObject"; 
 import { Fixture, Settings, Vec2, World } from "planck";
 import { RoleAnnouncementPacket } from "../packets/sending/roleAnnouncementPacket";
 import { Loot } from "./objects/loot";
@@ -414,9 +414,9 @@ export class Game {
                         }else{
                             if (difference > weaponInfo.maxReload) {
                                 difference = weaponInfo.maxReload;
-                                p.performActionAgain = true;
+                                p.performActionAgain = true; 
                             }
-                        }
+                        } 
 
                         (p.activeWeapon as Gun).ammo += difference;
                         p.inventory[weaponInfo.ammo] -= difference;
@@ -765,12 +765,12 @@ export class Game {
             new Loot(this, "deagle", p.position, 0, 1);
             new Loot(this, "model94", p.position, 0, 1);
             new Loot(this, "mk12", p.position, 0, 1);
-            new Loot(this, "m249", p.position, 0, 1);
-            new Loot(this, "mp220", p.position, 0, 1);
+            new Loot(this, "m4a1", p.position, 0, 1);
+            new Loot(this, "qbb97", p.position, 0, 1);
+            new Loot(this, "m1a1", p.position, 0, 1);
+            new Loot(this, "mp220", p.position, 0, 1); 
+            // new Loot(this, "usas", p.position, 0, 1);
             // new Loot(this, "sv98", p.position, 0, 1);
-
-
-
             // new Loot(this, "mirv", p.position, 0, 1);
         }
 

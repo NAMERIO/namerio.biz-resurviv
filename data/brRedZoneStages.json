@@ -12,27 +12,27 @@
     "duration": 320,
     "radOld": 250,
     "radNew": 75,
-    "damage": 22
+    "damage": 50
   },
   {
     "mode": 2,
     "duration": 10,
     "radOld": 250,
     "radNew": 75,
-    "damage": 22
+    "damage": 50
   },
   {
     "mode": 1,
     "duration": 50,
     "radOld": 75,
     "radNew": 0,
-    "damage": 22
+    "damage": 75
   },
   {
     "mode": 2,
     "duration": 10,
     "radOld": 75,
     "radNew": 0,
-    "damage": 22
+    "damage": 75
   }
 ]

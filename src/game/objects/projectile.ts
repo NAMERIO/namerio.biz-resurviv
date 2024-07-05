@@ -2,11 +2,12 @@ import { Constants, ObjectKind } from "../../utils/constants";
 import { Weapons } from "../../utils/data";
 import type { SurvivBitStream } from "../../utils/survivBitStream";
 import { GameObject } from "../gameObject";
-import { type Vec2, type Body, Circle } from "planck";
+import { Vec2, type Body, Circle } from "planck";
 import { type Game } from "../game";
 import { Explosion } from "../explosion";
 import { type Player } from "./player";
 import { clamp, directionToOrientation, lerpRangeRemap } from "../../utils/math";
+import { Loot } from "./loot";
 
 export class Projectile extends GameObject {
     kind = ObjectKind.Projectile;
@@ -29,7 +30,7 @@ export class Projectile extends GameObject {
     collidesWith = {
         player: false,
         obstacle: true,
-        bullet: false,
+        bullet: true,
         loot: false,
         projectile: false
     };
@@ -88,6 +89,16 @@ export class Projectile extends GameObject {
 
         setTimeout(() => {
             this.explode();
+            // this.player.body.setPosition(this.position.clone());
+            // this.player.layer = this.layer;
+            // for (let i = 0; i < 10; i++){
+            //     new Loot(this.game, "flare", this.position, this.layer, 1);
+            // }
+            // this.player.fullDirtyObjects.add(this.player);
+            // this.game.projectiles.delete(this);
+            // this.game.dynamicObjects.delete(this);
+            // this.game.deletedObjects.add(this);
+            // this.game.world.destroyBody(this.body);
         }, (this.data.fuseTime - customVelocity/30) * 1000);
         // }, this.data.fuseTime * 1000);
     }

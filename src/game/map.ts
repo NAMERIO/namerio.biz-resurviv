@@ -659,45 +659,45 @@ export class GameMap {
                     thisBound.max = newBound.max;
                 }
 
-                if (kind == ObjectKind.Player){
-                    // prevents players from spawning either on top of each other or very close
-                    if (this.game.gamemode == GameMode.DeathMatch){
-                        for (const p of this.game.livingPlayers){
-                            if (distanceBetween(thisPos, p.position) < 64){
-                                shouldContinue = true;
-                                break;
-                            }
-                        }
-                    }else if (this.game.gamemode == GameMode.BattleRoyale){
-                        if (Config.skinsAreTeam == false){
-                            for (const p of this.game.livingPlayers){
-                                if (distanceBetween(thisPos, p.position) < 64){
-                                    shouldContinue = true;
-                                    break;
-                                }
-                            }
-                        }else{
-                            let randomTeammate: Player | undefined;
-                            for (const p of this.game.livingPlayers){
-                                if (p.loadout.outfit == playerGroupId){
-                                    randomTeammate = p;
-                                    break;
-                                }
-                            }
+                // if (kind == ObjectKind.Player){
+                //     // prevents players from spawning either on top of each other or very close
+                //     if (this.game.gamemode == GameMode.DeathMatch){
+                //         for (const p of this.game.livingPlayers){
+                //             if (distanceBetween(thisPos, p.position) < 16){
+                //                 shouldContinue = true;
+                //                 break;
+                //             }
+                //         }
+                //     }else if (this.game.gamemode == GameMode.BattleRoyale){
+                //         if (Config.skinsAreTeam == false){
+                //             for (const p of this.game.livingPlayers){
+                //                 if (distanceBetween(thisPos, p.position) < 64){
+                //                     shouldContinue = true;
+                //                     break;
+                //                 }
+                //             }
+                //         }else{
+                //             let randomTeammate: Player | undefined;
+                //             for (const p of this.game.livingPlayers){
+                //                 if (p.loadout.outfit == playerGroupId){
+                //                     randomTeammate = p;
+                //                     break;
+                //                 }
+                //             }
 
-                            if (randomTeammate == undefined){
-                                for (const p of this.game.livingPlayers){
-                                    if (distanceBetween(thisPos, p.position) < 64){
-                                        shouldContinue = true;
-                                        break;
-                                    }
-                                }
-                            }else{
-                                thisPos = randomPointInsideCircle(randomTeammate.position, 10);
-                            }
-                        }
-                    }
-                }
+                //             if (randomTeammate == undefined){
+                //                 for (const p of this.game.livingPlayers){
+                //                     if (distanceBetween(thisPos, p.position) < 64){
+                //                         shouldContinue = true;
+                //                         break;
+                //                     }
+                //                 }
+                //             }else{
+                //                 thisPos = randomPointInsideCircle(randomTeammate.position, 10);
+                //             }
+                //         }
+                //     }
+                // }
 
                 for (const that of this.game.staticObjects) {
                     if (that instanceof Building) {

@@ -7,15 +7,15 @@ export class MapPacket extends SendingPacket {
     constructor(p: Player) {
         super(p);
         this.msgType = MsgType.Map;
-        this.allocBytes = 16384;
+        this.allocBytes = 16384; 
     }
-
+ 
     serialize(stream: SurvivBitStream): void {
         super.serialize(stream);
 
         const p: Player = this.p!;
 
-        stream.writeStringFixedLength("cobalt", 24); // 24 bytes max
+        stream.writeStringFixedLength("desert", 24); // 24 bytes max
         stream.writeUint32(p.map.seed);
         stream.writeUint16(p.map.width);
         stream.writeUint16(p.map.height);
