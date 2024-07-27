@@ -72,6 +72,14 @@
       "sourceRef": "0"
     },
     {
+      "type": "outfitBarrel",
+      "source": "standard-issue",
+      "timeAcquired": 0,
+      "status": 2,
+      "id": "0",
+      "sourceRef": "0"
+    },
+    {
       "type": "outfitDev",
       "source": "standard-issue",
       "timeAcquired": 0,

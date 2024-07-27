@@ -15,7 +15,7 @@ export class MapPacket extends SendingPacket {
 
         const p: Player = this.p!;
 
-        stream.writeStringFixedLength("desert", 24); // 24 bytes max
+        stream.writeStringFixedLength("main", 24); // 24 bytes max
         stream.writeUint32(p.map.seed);
         stream.writeUint16(p.map.width);
         stream.writeUint16(p.map.height);
