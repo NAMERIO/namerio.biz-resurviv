@@ -50,4 +50,4 @@ To open the game, go to http://127.0.0.1:4000/ in your browser.
 
 ## Hosting Resurviv Online: Step‐by‐Step Instructions
 If you want to host it online, Follow this insrtruction.
-[Hosting Resurviv Online: Step‐by‐Step Instructions](https://github.com/NAMERIO/namerio.biz-surviv-reloaded/wiki/Hosting-Resurviv-Online:-Step%E2%80%90by%E2%80%90Step-Instructions)
+[Hosting Resurviv Online: Step‐by‐Step Instructions](https://github.com/NAMERIO/namerio.biz-resurviv/wiki/Hosting-Resurviv-Online:-Step%E2%80%90by%E2%80%90Step-Instructions)
