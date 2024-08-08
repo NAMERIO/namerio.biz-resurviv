@@ -248,22 +248,6 @@
       "sourceRef": "0"
     },
     {
-      "type": "outfitParma",
-      "source": "standard-issue",
-      "timeAcquired": 0,
-      "status": 2,
-      "id": "0",
-      "sourceRef": "0"
-    },
-    {
-      "type": "outfitParmaPrestige",
-      "source": "standard-issue",
-      "timeAcquired": 0,
-      "status": 2,
-      "id": "0",
-      "sourceRef": "0"
-    },
-    {
       "type": "outfitTree",
       "source": "standard-issue",
       "timeAcquired": 0,
