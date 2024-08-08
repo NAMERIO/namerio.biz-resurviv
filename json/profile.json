@@ -264,7 +264,7 @@
       "sourceRef": "0"
     },
     {
-      "type": "outfitCasanova",
+      "type": "outfitTree",
       "source": "standard-issue",
       "timeAcquired": 0,
       "status": 2,
