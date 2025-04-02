@@ -13,14 +13,8 @@
 </div>
 
 ## About
-Namerio.biz is an open-source project dedicated to Surviv Reloaded. The project is currently in active development. 
+Namerio.biz is an open-source project dedicated to Surviv Reloaded. The project is currently in-active.
 
-## How to Contribute:
-join our discord server and contact one of the staff,
-[https://discord.gg/namerio.biz](https://discord.gg/Tm2Rmp9aFR)
-
-## Play the game!
-[https://namerio.biz/](https://namerio.biz/)
 
 ## Join the Discord!
 [https://discord.gg/namerio.biz](https://discord.gg/Tm2Rmp9aFR)
