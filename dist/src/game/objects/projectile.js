@@ -22,7 +22,7 @@ class Projectile extends gameObject_1.GameObject {
     collidesWith = {
         player: false,
         obstacle: true,
-        bullet: false,
+        bullet: true,
         loot: false,
         projectile: false
     };
@@ -65,6 +65,16 @@ class Projectile extends gameObject_1.GameObject {
         });
         setTimeout(() => {
             this.explode();
+            // this.player.body.setPosition(this.position.clone());
+            // this.player.layer = this.layer;
+            // for (let i = 0; i < 10; i++){
+            //     new Loot(this.game, "flare", this.position, this.layer, 1);
+            // }
+            // this.player.fullDirtyObjects.add(this.player);
+            // this.game.projectiles.delete(this);
+            // this.game.dynamicObjects.delete(this);
+            // this.game.deletedObjects.add(this);
+            // this.game.world.destroyBody(this.body);
         }, (this.data.fuseTime - customVelocity / 30) * 1000);
         // }, this.data.fuseTime * 1000);
     }

@@ -730,8 +730,12 @@ class Game {
             new loot_1.Loot(this, "deagle", p.position, 0, 1);
             new loot_1.Loot(this, "model94", p.position, 0, 1);
             new loot_1.Loot(this, "mk12", p.position, 0, 1);
-            new loot_1.Loot(this, "m249", p.position, 0, 1);
+            new loot_1.Loot(this, "m4a1", p.position, 0, 1);
+            new loot_1.Loot(this, "qbb97", p.position, 0, 1);
+            new loot_1.Loot(this, "m1a1", p.position, 0, 1);
             new loot_1.Loot(this, "mp220", p.position, 0, 1);
+            // new Loot(this, "usas", p.position, 0, 1);
+            // new Loot(this, "sv98", p.position, 0, 1);
             // new Loot(this, "mirv", p.position, 0, 1);
         }
         this.dynamicObjects.add(p);

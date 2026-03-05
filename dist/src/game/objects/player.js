@@ -142,7 +142,7 @@ class Player extends gameObject_1.GameObject {
         frag: 3,
         smoke: 0,
         strobe: 0,
-        mirv: 0,
+        mirv: 3,
         snowball: 0,
         potato: 0,
         bandage: 30,
@@ -1235,24 +1235,24 @@ class Player extends gameObject_1.GameObject {
             }
             //revives are only a thing in battleroyale
             // if player has default skin or if theyre disconnected, they cannot be downed and this logic is skipped
-            if (this.game.gamemode == constants_1.GameMode.BattleRoyale) {
-                if (data_1.Config.skinsAreTeam && this.downed == false && !(this.loadout.outfit == data_1.TypeToId.outfitBase) && this.disconnected == false && numTeammates != 0) {
-                    this.health = 100;
-                    let bleedingDamageId = setInterval(() => {
-                        if (this._health == 0 || this.downed == false) {
-                            clearInterval(bleedingDamageId);
-                        }
-                        this.damage(4, undefined, undefined, constants_1.DamageType.Bleeding);
-                    }, 1000);
-                    this.boost = 0;
-                    this.downed = true;
-                    this.fullUpdate = true;
-                    this.recalculateSpeed();
-                    this.game.fullDirtyObjects.add(this);
-                    this.fullDirtyObjects.add(this);
-                    return;
-                }
-            }
+            // if (this.game.gamemode == GameMode.BattleRoyale){
+            //     if (Config.skinsAreTeam && this.downed == false && !(this.loadout.outfit == TypeToId.outfitBase) && this.disconnected == false && numTeammates != 0){
+            //         this.health = 100;
+            //         let bleedingDamageId = setInterval(() => {
+            //             if (this._health == 0 || this.downed == false){
+            //                 clearInterval(bleedingDamageId);
+            //             }
+            //             this.damage(4, undefined, undefined, DamageType.Bleeding);
+            //         }, 1000);
+            //         this.boost = 0;
+            //         this.downed = true;
+            //         this.fullUpdate = true;
+            //         this.recalculateSpeed();
+            //         this.game.fullDirtyObjects.add(this);
+            //         this.fullDirtyObjects.add(this);
+            //         return;
+            //     }
+            // }
             //if player bleeds out, give the kill to the last player that damaged "this" while not downed
             source = this.lastPlayerToDamageThis;
             //Drop nade if player was cooking one
@@ -1601,6 +1601,9 @@ class Player extends gameObject_1.GameObject {
         }
     }
     interactWith(object) {
+        if (["308sub", "flare", "45acp"].includes(object.typeString)) {
+            return;
+        }
         if (this.downed) {
             return;
         }

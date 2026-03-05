@@ -8,7 +8,8 @@ class SurvivBitStream extends bit_buffer_1.BitStream {
         super(source, byteOffset, byteLength);
     }
     static alloc(length) {
-        return new SurvivBitStream(Buffer.alloc(length));
+        const buf = Buffer.alloc(length);
+        return new SurvivBitStream(buf.buffer, buf.byteOffset, buf.byteLength);
     }
     writeString(str) { this.writeASCIIString(str); }
     writeStringFixedLength(str, len) { this.writeASCIIString(str, len); }

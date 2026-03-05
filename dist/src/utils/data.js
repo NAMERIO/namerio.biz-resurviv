@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.IdToType = exports.Debug = exports.Config = exports.TypeToId = exports.IdToGameType = exports.IdToMapType = exports.AllowedBoost = exports.AllowedHeal = exports.AllowedEmotes = exports.AllowedMelee = exports.AllowedSkins = exports.RedZoneStages = exports.LootTables = exports.Explosions = exports.Bullets = exports.Weapons = exports.Items = exports.Maps = exports.Objects = void 0;
+exports.Debug = exports.Config = exports.TypeToId = exports.IdToGameType = exports.IdToMapType = exports.AllowedBoost = exports.AllowedHeal = exports.AllowedEmotes = exports.AllowedMelee = exports.AllowedSkins = exports.RedZoneStages = exports.LootTables = exports.Explosions = exports.Bullets = exports.Weapons = exports.Items = exports.Maps = exports.Objects = void 0;
+exports.IdToType = IdToType;
 const misc_1 = require("./misc");
 // todo Give all of these actual typings
 exports.Objects = (0, misc_1.readJSON)("data/objects.json");
@@ -35,5 +36,4 @@ function IdToType(id) {
             return type;
     return "";
 }
-exports.IdToType = IdToType;
 //# sourceMappingURL=data.js.map

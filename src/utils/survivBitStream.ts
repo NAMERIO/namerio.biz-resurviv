@@ -7,7 +7,8 @@ export class SurvivBitStream extends BitStream {
     }
 
     static alloc(length: number): SurvivBitStream {
-        return new SurvivBitStream(Buffer.alloc(length));
+        const buf = Buffer.alloc(length);
+        return new SurvivBitStream(buf.buffer, buf.byteOffset, buf.byteLength);
     }
 
     writeString(str: string): void { this.writeASCIIString(str); }

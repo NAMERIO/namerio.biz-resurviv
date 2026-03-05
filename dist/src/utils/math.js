@@ -1,6 +1,40 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.convertToMilliseconds = exports.lerpRangeRemap = exports.lerp = exports.vecLerp = exports.randomPointInsideCircle = exports.radiansToDegrees = exports.degreesToRadians = exports.vec2Rotate = exports.unitVecToRadians = exports.bodyFromCollisionData = exports.angleBetween = exports.splitRect = exports.getOppositeOrientation = exports.directionToOrientation = exports.orientationToRad = exports.rotateRect = exports.addAdjust = exports.addOrientations = exports.objectCollision = exports.distanceToRect = exports.distanceToCircle = exports.rectRectCollision = exports.clamp = exports.rectCollision = exports.circleCollision = exports.distanceBetween = exports.randomBoolean = exports.weightedRandom = exports.randomVec = exports.random = exports.randomFloatSpecial = exports.randomFloat = exports.toStairsLayer = exports.toGroundLayer = exports.sameLayer = void 0;
+exports.sameLayer = sameLayer;
+exports.toGroundLayer = toGroundLayer;
+exports.toStairsLayer = toStairsLayer;
+exports.randomFloat = randomFloat;
+exports.randomFloatSpecial = randomFloatSpecial;
+exports.random = random;
+exports.randomVec = randomVec;
+exports.weightedRandom = weightedRandom;
+exports.randomBoolean = randomBoolean;
+exports.distanceBetween = distanceBetween;
+exports.circleCollision = circleCollision;
+exports.rectCollision = rectCollision;
+exports.clamp = clamp;
+exports.rectRectCollision = rectRectCollision;
+exports.distanceToCircle = distanceToCircle;
+exports.distanceToRect = distanceToRect;
+exports.objectCollision = objectCollision;
+exports.addOrientations = addOrientations;
+exports.addAdjust = addAdjust;
+exports.rotateRect = rotateRect;
+exports.orientationToRad = orientationToRad;
+exports.directionToOrientation = directionToOrientation;
+exports.getOppositeOrientation = getOppositeOrientation;
+exports.splitRect = splitRect;
+exports.angleBetween = angleBetween;
+exports.bodyFromCollisionData = bodyFromCollisionData;
+exports.unitVecToRadians = unitVecToRadians;
+exports.vec2Rotate = vec2Rotate;
+exports.degreesToRadians = degreesToRadians;
+exports.radiansToDegrees = radiansToDegrees;
+exports.randomPointInsideCircle = randomPointInsideCircle;
+exports.vecLerp = vecLerp;
+exports.lerp = lerp;
+exports.lerpRangeRemap = lerpRangeRemap;
+exports.convertToMilliseconds = convertToMilliseconds;
 const planck_1 = require("planck");
 const constants_1 = require("./constants");
 const obstacle_1 = require("../game/objects/obstacle");
@@ -18,15 +52,12 @@ Objects on the same layer should interact with one another.
 function sameLayer(a, b) {
     return !!((1 & a) === (1 & b) || (2 & a && 2 & b));
 }
-exports.sameLayer = sameLayer;
 function toGroundLayer(a) {
     return 1 & a;
 }
-exports.toGroundLayer = toGroundLayer;
 function toStairsLayer(a) {
     return 2 | a;
 }
-exports.toStairsLayer = toStairsLayer;
 /**
  * Generate a random floating-point value.
  * @param min The minimum value that can be generated.
@@ -35,11 +66,9 @@ exports.toStairsLayer = toStairsLayer;
 function randomFloat(min, max) {
     return (Math.random() * (max - min) + min);
 }
-exports.randomFloat = randomFloat;
 function randomFloatSpecial(min, max) {
     return (Math.random() < 0.5) ? randomFloat(min, max) : -randomFloat(min, max);
 }
-exports.randomFloatSpecial = randomFloatSpecial;
 /**
  * Generate a random integer.
  * @param min The minimum value that can be generated.
@@ -48,7 +77,6 @@ exports.randomFloatSpecial = randomFloatSpecial;
 function random(min, max) {
     return Math.floor(randomFloat(min, max + 1));
 }
-exports.random = random;
 /**
  * Generate a vector of random direction and magnitude.
  * @param minX The minimum length in the x-direction.
@@ -59,7 +87,6 @@ exports.random = random;
 function randomVec(minX, maxX, minY, maxY) {
     return (0, planck_1.Vec2)(random(minX, maxX), random(minY, maxY));
 }
-exports.randomVec = randomVec;
 // https://stackoverflow.com/a/55671924/5905216
 /**
  * Pick a random element from a weighted series of elements.
@@ -77,14 +104,12 @@ function weightedRandom(items, weights) {
     }
     return items[i];
 }
-exports.weightedRandom = weightedRandom;
 /**
  * Generate a random boolean value.
  */
 function randomBoolean() {
     return Math.random() < 0.5;
 }
-exports.randomBoolean = randomBoolean;
 /**
  * Calculate the distance between two points.
  * @param v1 The first point.
@@ -93,7 +118,6 @@ exports.randomBoolean = randomBoolean;
 function distanceBetween(v1, v2) {
     return Math.sqrt(Math.pow(v1.x - v2.x, 2) + Math.pow(v1.y - v2.y, 2));
 }
-exports.distanceBetween = distanceBetween;
 /**
  * Check whether two circles collide.
  * @param pos1 The center of the first circle.
@@ -107,7 +131,6 @@ function circleCollision(pos1, r1, pos2, r2) {
     const y = pos1.y - pos2.y;
     return a * a > x * x + y * y;
 }
-exports.circleCollision = circleCollision;
 /* export function rectCollision(min: Vec2, max: Vec2, circlePos: Vec2, circleRad: number): boolean {
     const distX = Math.max(min.x, Math.min(max.x, circlePos.x)) - circlePos.x;
     const distY = Math.max(min.y, Math.min(max.y, circlePos.y)) - circlePos.y;
@@ -118,7 +141,6 @@ function rectCollision(min, max, pos, rad) {
     const dstSqr = planck_1.Vec2.lengthSquared(planck_1.Vec2.sub(pos, cpt));
     return (dstSqr < rad * rad) || (pos.x >= min.x && pos.x <= max.x && pos.y >= min.y && pos.y <= max.y);
 }
-exports.rectCollision = rectCollision;
 /**
  * Conform a number to specified bounds.
  * @param a The number to conform.
@@ -128,11 +150,9 @@ exports.rectCollision = rectCollision;
 function clamp(a, min, max) {
     return a < max ? a > min ? a : min : max;
 }
-exports.clamp = clamp;
 function rectRectCollision(min1, max1, min2, max2) {
     return min2.x < max1.x && min2.y < max1.y && min1.x < max2.x && min1.y < max2.y;
 }
-exports.rectRectCollision = rectRectCollision;
 /**
  * Determine the distance between two circles.
  * @param pos1 The center of the first circle.
@@ -149,7 +169,6 @@ function distanceToCircle(pos1, r1, pos2, r2) {
     const xy = (x * x + y * y);
     return { collided: a2 > xy, distance: a2 - xy };
 }
-exports.distanceToCircle = distanceToCircle;
 function distanceToRect(min, max, circlePos, circleRad) {
     const distX = Math.max(min.x, Math.min(max.x, circlePos.x)) - circlePos.x;
     const distY = Math.max(min.y, Math.min(max.y, circlePos.y)) - circlePos.y;
@@ -157,7 +176,6 @@ function distanceToRect(min, max, circlePos, circleRad) {
     const distSquared = (distX * distX + distY * distY);
     return { collided: distSquared < radSquared, distance: radSquared - distSquared };
 }
-exports.distanceToRect = distanceToRect;
 function objectCollision(object, position, radius) {
     let record;
     if (object instanceof obstacle_1.Obstacle) {
@@ -177,11 +195,9 @@ function objectCollision(object, position, radius) {
     // bug this if-else chain isn't necessarily exhaustive
     return record;
 }
-exports.objectCollision = objectCollision;
 function addOrientations(n1, n2) {
     return (n1 + n2) % 4;
 }
-exports.addOrientations = addOrientations;
 function addAdjust(position1, position2, orientation) {
     if (orientation === 0)
         return planck_1.Vec2.add(position1, position2);
@@ -204,7 +220,6 @@ function addAdjust(position1, position2, orientation) {
     }
     return planck_1.Vec2.add(position1, (0, planck_1.Vec2)(xOffset, yOffset));
 }
-exports.addAdjust = addAdjust;
 function rotateRect(pos, min, max, scale, orientation) {
     min = planck_1.Vec2.mul(min, scale);
     max = planck_1.Vec2.mul(max, scale);
@@ -233,11 +248,9 @@ function rotateRect(pos, min, max, scale, orientation) {
         max: addAdjust(pos, max, orientation)
     };
 }
-exports.rotateRect = rotateRect;
 function orientationToRad(orientation) {
     return (orientation % 4) * 0.5 * Math.PI;
 }
-exports.orientationToRad = orientationToRad;
 function directionToOrientation(direction) {
     const [x, y] = [direction.x, direction.y];
     if (Math.abs(x) > Math.abs(y)) {
@@ -247,7 +260,6 @@ function directionToOrientation(direction) {
         return y > 0 ? 1 : 3;
     }
 }
-exports.directionToOrientation = directionToOrientation;
 function getOppositeOrientation(orientation) {
     if (orientation == 0) {
         return 2;
@@ -262,7 +274,6 @@ function getOppositeOrientation(orientation) {
         return 1;
     }
 }
-exports.getOppositeOrientation = getOppositeOrientation;
 function splitRect(rect, axis) {
     const e = planck_1.Vec2.mul(planck_1.Vec2.sub(rect.max, rect.min), 0.5);
     const c = planck_1.Vec2.add(rect.min, e);
@@ -287,7 +298,6 @@ function splitRect(rect, axis) {
         ? [right, left]
         : [left, right];
 }
-exports.splitRect = splitRect;
 /**
  * Calculate the angle between two vectors.
  * @param a The first vector.
@@ -299,7 +309,6 @@ function angleBetween(a, b) {
     const dx = a.x - b.x;
     return Math.atan2(dy, dx);
 }
-exports.angleBetween = angleBetween;
 function bodyFromCollisionData(world, data, position, orientation = 0, scale = 1, obstacle) {
     let body;
     switch (data.type) {
@@ -335,7 +344,6 @@ function bodyFromCollisionData(world, data, position, orientation = 0, scale = 1
     }
     return body;
 }
-exports.bodyFromCollisionData = bodyFromCollisionData;
 /**
  * Get the angle, in radians, formed by a vector.
  * @param v The vector to calculate against.
@@ -343,13 +351,11 @@ exports.bodyFromCollisionData = bodyFromCollisionData;
 function unitVecToRadians(v) {
     return Math.atan2(v.y, v.x);
 }
-exports.unitVecToRadians = unitVecToRadians;
 function vec2Rotate(v, angle) {
     const cos = Math.cos(angle);
     const sin = Math.sin(angle);
     return (0, planck_1.Vec2)(v.x * cos - v.y * sin, v.x * sin + v.y * cos);
 }
-exports.vec2Rotate = vec2Rotate;
 /**
  * Convert degrees to radians.
  * @param degrees The angle, in degrees.
@@ -357,7 +363,6 @@ exports.vec2Rotate = vec2Rotate;
 function degreesToRadians(degrees) {
     return degrees * (Math.PI / 180);
 }
-exports.degreesToRadians = degreesToRadians;
 /**
  * Convert radians to degrees.
  * @param radians The angle, in radians.
@@ -365,7 +370,6 @@ exports.degreesToRadians = degreesToRadians;
 function radiansToDegrees(radians) {
     return (radians * 180) / Math.PI;
 }
-exports.radiansToDegrees = radiansToDegrees;
 /**
  * Generate a random point inside of a circle.
  * @link https://stackoverflow.com/a/51727716/5905216
@@ -400,15 +404,12 @@ function randomPointInsideCircle(position, radius) {
     // scale and translate the points
     return (0, planck_1.Vec2)(x * radius + position.x, y * radius + position.y);
 }
-exports.randomPointInsideCircle = randomPointInsideCircle;
 function vecLerp(t, a, b) {
     return planck_1.Vec2.add(planck_1.Vec2.mul(a, 1.0 - t), planck_1.Vec2.mul(b, t));
 }
-exports.vecLerp = vecLerp;
 function lerp(t, a, b) {
     return a * (1.0 - t) + b * t;
 }
-exports.lerp = lerp;
 /**
    * Linear interpolation with extra steps, interpolates from one range to another
    * lerpRangeRemap(50, 0, 100, 0, 360) will output 180 since 50 is halfway between 0 and 100 so the function finds the halfway point between 0 and 360
@@ -424,7 +425,6 @@ function lerpRangeRemap(t, tMin, tMax, valueMin, valueMax) {
     const clampedT = clamp(t, tMin, tMax);
     return ((clampedT - tMin) * (valueMax - valueMin)) / (tMax - tMin) + valueMin;
 }
-exports.lerpRangeRemap = lerpRangeRemap;
 function convertToMilliseconds(minutes, seconds) {
     const minutesInMilliseconds = minutes * 60 * 1000; // 1 minute = 60 seconds * 1000 milliseconds
     const secondsInMilliseconds = seconds * 1000; // 1 second = 1000 milliseconds
@@ -432,5 +432,4 @@ function convertToMilliseconds(minutes, seconds) {
     const totalMilliseconds = minutesInMilliseconds + secondsInMilliseconds;
     return totalMilliseconds;
 }
-exports.convertToMilliseconds = convertToMilliseconds;
 //# sourceMappingURL=math.js.map

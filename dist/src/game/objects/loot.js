@@ -1,6 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.splitUpLoot = exports.generateLooseLootFromArray = exports.Loot = void 0;
+exports.Loot = void 0;
+exports.generateLooseLootFromArray = generateLooseLootFromArray;
+exports.splitUpLoot = splitUpLoot;
 const constants_1 = require("../../utils/constants");
 const misc_1 = require("../../utils/misc");
 const data_1 = require("../../utils/data");
@@ -369,7 +371,6 @@ function generateLooseLootFromArray(game, loot, position, layer) {
         }
     }
 }
-exports.generateLooseLootFromArray = generateLooseLootFromArray;
 function splitUpLoot(player, item, amount) {
     const dropCount = Math.floor(amount / 60);
     for (let i = 0; i < dropCount; i++) {
@@ -380,5 +381,4 @@ function splitUpLoot(player, item, amount) {
     if (amount % 60 !== 0)
         new Loot(player.game, item, player.position, player.layer, amount % 60);
 }
-exports.splitUpLoot = splitUpLoot;
 //# sourceMappingURL=loot.js.map
